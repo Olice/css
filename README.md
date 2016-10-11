@@ -210,7 +210,19 @@ Use `0` instead of `none` to specify that a style has no border.
 
 ### Ordering of property declarations
 
-1. Property declarations
+1. `@include` declarations
+
+    Grouping `@include`s at the start makes discerning the output easier and allows overrides to be applied.
+    ```scss
+    .btn-green {
+      background: green;
+      font-weight: bold;
+      @include transition(background 0.5s ease);
+      // ...
+    }
+    ```
+
+2. Property declarations
 
     List all standard property declarations, anything that isn't an `@include` or a nested selector.
 
@@ -221,20 +233,7 @@ Use `0` instead of `none` to specify that a style has no border.
       // ...
     }
     ```
-
-2. `@include` declarations
-
-    Grouping `@include`s at the end makes it easier to read the entire selector.
-
-    ```scss
-    .btn-green {
-      background: green;
-      font-weight: bold;
-      @include transition(background 0.5s ease);
-      // ...
-    }
-    ```
-
+    
 3. Nested selectors
 
     Nested selectors, _if necessary_, go last, and nothing goes after them. Add whitespace between your rule declarations and nested selectors, as well as between adjacent nested selectors. Apply the same guidelines as above to your nested selectors.
