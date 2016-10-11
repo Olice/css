@@ -2,6 +2,8 @@
 
 *A mostly reasonable approach to CSS and Sass*
 
+Forked from AirBnB.
+
 ## Table of Contents
 
   1. [Terminology](#terminology)
