@@ -25,7 +25,9 @@
   "sort-order": [
     [
       "$variable",
-      "$include",
+      "$include"
+    ],
+    [
       "position",
       "top",
       "right",
@@ -392,6 +394,9 @@
       "min-zoom",
       "user-zoom",
       "orientation"
+    ],
+    [
+      "$include media"
     ]
   ]
 }
