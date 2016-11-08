@@ -1,14 +1,14 @@
 {
-  "remove-empty-rulesets": true,
   "always-semicolon": true,
-  "color-case": "lower",
   "block-indent": "  ",
+  "color-case": "lower",
   "color-shorthand": true,
   "element-case": "lower",
   "eof-newline": true,
   "leading-zero": false,
   "lines-between-rulesets": 1,
   "quotes": "single",
+  "remove-empty-rulesets": true,
   "space-before-colon": "",
   "space-after-colon": " ",
   "space-before-combinator": " ",
@@ -24,7 +24,9 @@
   "unitless-zero": true,
   "sort-order": [
     [
-      "$variable",
+      "$variable"
+    ],
+    [
       "$include"
     ],
     [
@@ -393,10 +395,14 @@
       "max-zoom",
       "min-zoom",
       "user-zoom",
-      "orientation"
+      "orientation",
+      "..."
     ],
     [
-      "$include media"
+      "$include media",
+      "$include media-min",
+      "$include respond",
+      "$include respond-to"
     ]
   ]
 }
